@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/bg_index.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 35%;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: black;
+}
+
+.navigation_bar {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #333;
+  margin-bottom: 20px;
+}
+
+.Error_input {
+  border-style: solid;
+  border-color: red;
+}
+
+#header_info {
+  text-align: center;
+  color: white;
+}
+
+#plainText_box {
+  float:left;
+  margin-right:10%;
+  margin-top: 10%;
+  color: white;
+}
+
+#cipherText_box {
+  float: right;
+  margin-right: 5%;
+  margin-top: 10%;
+  color: white;
+}
+
+#plainText_label, #plainText_input {
+  display: block;
+  margin-top: 2px;
+  margin-left: 20%;
+}
+
+#cipherText_label, #cipherText_input {
+  display: block;
+  margin-top: 2px;
+  margin-right: 20%;
+}
+
+#key_selector,#encryptType_section,#city_input {
+  margin-top: 30px;
+}
+
+#city_name,#weather_select {
+  visibility: hidden;
+}

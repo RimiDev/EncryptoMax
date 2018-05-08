@@ -1,0 +1,68 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+  <script src="encrypter.js"></script>
+  <link rel="stylesheet" href="encrypterStyle.css">
+	<meta charset="utf-8"/>
+
+<!-- JAVASCRIPT ENABLED WEBSITE -->
+<title>
+  Encrypter
+</title>
+
+</head>
+
+<body>
+
+<ul class="navigation_bar">
+  <li><a href="encryption.html" class="active">Encryption</a></li>
+  <li><a href="decryption.html">Decryption</a></li>
+  <li><a href="aboutme.html">About me</a></li>
+  <li><a href="wizard.html">Wizard</a></li>
+</ul>
+
+<section id="header_info">
+  <h1> Welcome to Max Encrypto website ! </h1>
+  <p> Here you can encrypt your clear-text messages into cipher-text </p>
+  <p> Please select your secret key to provide the encryption differences </p>
+    <section id="encryptType_section">
+      <select id="encrypt_type">
+        <option value="encrypt_key">Secret Key encryption</option>
+        <option id="weather_select" value="encrypt_weather">Weather encryption</option>
+      </select>
+    </section>
+    <section id="key_section">
+<!--Options will be created with javaScript if the user is in non-modern/modern browser-->
+    </section>
+    <p id="weather"></p>
+    <section id="city_name">
+      <input type="text" id="city_input"/>
+      <button id="city_submit" visibility="hidden">Submit</button>
+    </section>
+</section>
+
+<section id="plainText_box">
+  <label id="plainText_label" for="plainText_input"> Enter your message here </label>
+    <textarea id="plainText_input" cols="50" rows="15" placeholder="Enter a message you want encrypted">
+</textarea>
+</section>
+
+<section id="cipherText_box">
+  <label id="cipherText_label" for ="cipherText_input"> Your encrypted message </label>
+    <textarea id="cipherText_input" cols="50" rows="15" readonly>
+</textarea>
+</section>
+
+
+
+
+
+
+<!-- This will redirect the user to the 'non-javaScript page' -->
+  <noscript>
+    <meta HTTP-EQUIV="REFRESH" content ="0; url=indexNoJS.html">
+  </noscipt>
+</body>
+
+
+</html>

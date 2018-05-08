@@ -1,0 +1,50 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+  <script src="decrypter.js"></script>
+
+  <link rel="stylesheet" href="encrypterStyle.css">
+	<meta charset="utf-8"/>
+
+  <title>
+    Decrypter
+  </title>
+
+</head>
+
+<body>
+
+  <ul class="navigation_bar">
+    <li><a href="encryption.html">Encryption</a></li>
+    <li><a class="active" href="decryption.html">Decryption</a></li>
+    <li><a href="aboutme.html">About me</a></li>
+    <li><a href="wizard.html">Wizard</a></li>
+  </ul>
+
+  <section id="header_info">
+    <h1> Decrypt your messages here </h1>
+    <p> Here you can deencrypt your cipher-text messages into clear-text </p>
+    <p> Please select your secret key to provide the decryption differences </p>
+      <section id="encryptType_section">
+        <select id="encrypt_type">
+          <option value="encrypt_key">Secret Key encryption</option>
+        </select>
+      </section>
+      <section id="key_section">
+  <!--Options will be created with javaScript if the user is in non-modern/modern browser-->
+      </section>
+
+      <section id="plainText_box">
+        <label id="plainText_label" for="plainText_input"> Enter your encrytped message here </label>
+          <textarea id="plainText_input" cols="50" rows="15" placeholder="Enter a message you want decrypted"></textarea>
+      </section>
+
+      <section id="cipherText_box">
+        <label id="cipherText_label" for ="cipherText_input"> Your clear-text message </label>
+          <textarea id="cipherText_input" cols="50" rows="15" readonly></textarea>
+      </section>
+
+
+</body>
+
+</html>
